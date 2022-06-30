@@ -11,11 +11,11 @@ public class PhoneTableClass {
     }
     public String getFio(String fio){
         if(stringStringHashMap.containsValue(fio)){
-            String result = "Телефонный номер - ";
+            String result = "РўРµР»РµС„РѕРЅРЅС‹Р№ РЅРѕРјРµСЂ - ";
             for(String key: stringStringHashMap.keySet()){
                 if(stringStringHashMap.get(key).equals(fio)) result += key + "; ";
             }
             return result;
-        } else return "Такого нет";
+        } else return "РўР°РєРѕРіРѕ РЅРµС‚";
     }
 }

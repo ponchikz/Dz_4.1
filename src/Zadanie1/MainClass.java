@@ -3,19 +3,19 @@ package Zadznie1;
 import java.util.*;
 
 public class MainClass {
-    public static List<String> List = Arrays.asList("Дом", "Работа", "Забор", "Машина","Кирпич",
-            "Кирпич", "Завод", "Машина","Кирпич", "Ключ");
+    public static List<String> List = Arrays.asList("Р”РѕРј", "Р Р°Р±РѕС‚Р°", "Р—Р°Р±РѕСЂ", "РњР°С€РёРЅР°","РљРёСЂРїРёС‡",
+            "РљРёСЂРїРёС‡", "Р—Р°РІРѕРґ", "РњР°С€РёРЅР°","РљРёСЂРїРёС‡", "РљР»СЋС‡");
 
     public static void main(String[] args) {
 
         System.out.println(List);
-        System.out.println("Колличество слов = " + List.size() + '\n');
+        System.out.println("РљРѕР»Р»РёС‡РµСЃС‚РІРѕ СЃР»РѕРІ = " + List.size() + '\n');
 
         Set<String> set = new HashSet<>(List);
         System.out.println(set);
 
         HashSet<String> targetSet = new HashSet<>(List) ;
-        System.out.println("Колличесто не повторяющихся слов = " + targetSet.size());
+        System.out.println("РљРѕР»Р»РёС‡РµСЃС‚Рѕ РЅРµ РїРѕРІС‚РѕСЂСЏСЋС‰РёС…СЃСЏ СЃР»РѕРІ = " + targetSet.size());
 
 
         HashMap<String, Integer> result = new HashMap<>();
@@ -32,4 +32,5 @@ public class MainClass {
         }
         return result;
     }
+
 }
